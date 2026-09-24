@@ -1,6 +1,6 @@
-# QTPCA
+# QTPCA - Server Side
 
-Bezhotovostní náhrada mincovníků pro spotřebiče ve společných prostorách budov (např. pračky). Uživatel si předem pošle peníze bankovním převodem, na terminálu u spotřebiče se přihlásí jednorázovým kódem a spotřebič si „odemkne" na zvolený čas.
+QR Transfer Pay for Communal Appliances - Bezhotovostní náhrada mincovníků pro spotřebiče ve společných prostorách budov (např. pračky). Uživatel si předem pošle peníze bankovním převodem, na terminálu u spotřebiče se přihlásí jednorázovým kódem a spotřebič si „odemkne" na zvolený čas.
 
 Autoři: Karolina Kováčová, Jindřich Adamec
 
