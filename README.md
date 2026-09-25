@@ -7,7 +7,7 @@ QR Transfer Pay for Communal Appliances - Bezhotovostní náhrada mincovníků p
 1. **Dobití kreditu** – uživatel pošle převod na bankovní účet QTPCA a jako variabilní symbol uvede číslo svého pokoje.
 2. **Zpracování plateb** – server každé 3 minuty stáhne výpis z banky a připíše platby na zůstatky pokojů.
 3. **Přihlášení na terminálu** – uživatel zadá na klávesnici číslo pokoje a jednorázový kód (TOTP) z Google Authenticatoru.
-4. **Spuštění spotřebiče** – uživatel zvolí spotřebič, čas a cenu. Server strhne cenu ze zůstatku a terminál spotřebič zapne.
+4. **Spuštění spotřebiče** – uživatel zvolí spotřebič a cenu. Server strhne cenu ze zůstatku a terminál spotřebič zapne.
 5. **Dokončení** – po skončení (nebo přerušení) terminál pošle skutečně využité jednotky a cenu. Server vrátí rozdíl na zůstatek.
 
 ## Architektura
@@ -28,7 +28,7 @@ appliance_module/   spotřebiče, endpointy, pokoje, logy běhů, auth služba
 bank_module/        zpracování bankovních plateb
   data_getter.py    Celery úloha pro stažení výpisu
   addBalance.py     připsání plateb na zůstatky pokojů
-  data.txt          ukázkový výpis (formát Fio banky, JSON)
+  data.txt          ukázkový výpis
 ```
 
 ## Datový model
